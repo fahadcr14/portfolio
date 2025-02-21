@@ -8,6 +8,12 @@ const routes = {
   "/gallery": true,
 };
 
+const social=  {
+  linkedin: "https://www.linkedin.com/in/fahad-hussain99",
+  github: "https://github.com/fahadcr14",
+  youtube: "https://youtu.be/UoPeATHnvqQ?si=3Q9fjOk6zR9z-aj2"
+}
+
 // Enable password protection on selected routes
 // Set password in the .env file, refer to .env.example
 const protectedRoutes = {
@@ -106,4 +112,4 @@ const mailchimp = {
   },
 };
 
-export { routes, protectedRoutes, effects, style, display, mailchimp, baseURL };
+export { routes,social, protectedRoutes, effects, style, display, mailchimp, baseURL };

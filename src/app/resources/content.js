@@ -1,15 +1,15 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Fahad",
+  lastName: "Hussain",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  role: "Full Stack AI/ML Engineer",
+  avatar: "/images/avatar.jpg", 
+  location: "Lahore, Pakistan",
+  languages: ["English", "Urdu"],
 };
 
 const newsletter = {
@@ -17,34 +17,27 @@ const newsletter = {
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
-      I occasionally write about design, technology, and share thoughts on the intersection of
-      creativity and engineering.
+      I occasionally write about AI, ML, and innovative technology solutions.
     </>
   ),
 };
 
 const social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
+    link: "https://github.com/fahadcr14",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/fahad-hussain99",
   },
-  {
-    name: "X",
-    icon: "x",
-    link: "",
-  },
+
   {
     name: "Email",
     icon: "email",
-    link: "mailto:example@gmail.com",
+    link: "mailto:fahadseedat@gmail.com",
   },
 ];
 
@@ -52,19 +45,18 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Design engineer and builder</>,
+  headline: <>Full Stack AI/ML Engineer and Innovator</>,
   subline: (
     <>
-      I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      I'm Fahad, a Full Stack AI/ML Engineer dedicated to building innovative solutions in AI, ML, and Computer Vision.
     </>
   ),
 };
 
 const about = {
   label: "About",
-  title: "About me",
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  title: "About Fahad Hussain",
+  description: `Meet ${person.name}, a ${person.role} from ${person.location}`,
   tableOfContent: {
     display: true,
     subItems: false,
@@ -74,59 +66,59 @@ const about = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    link: "https://cal.com/your-scheduling-link", // Replace with your scheduling link if available.
   },
   intro: {
     display: true,
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        I am Fahad Hussain, a visionary Full Stack AI/ML Engineer committed to creating innovative solutions to solve complex global challenges using Machine Learning, Deep Learning, and Computer Vision.
       </>
     ),
   },
   work: {
-    display: true, // set to false to hide this section
+    display: true,
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Freelance",
+        timeframe: "June 2023 – Aug 2023",
+        role: "Web Development",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Developed a Django web app to manage data for 800,000 houses, significantly reducing costs.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Optimized database queries, resulting in a 30% improvement in performance.
           </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Freelance",
+        timeframe: "July 2023 – Sep 2024",
+        role: "Advanced Web Scraping",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Built and maintained 70+ web scrapers with proxy extensions.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Automated data retrieval using cron jobs, reducing processing time by 40%.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Freelance",
+        timeframe: "Sep 2024 – Dec 2024",
+        role: "Generative AI",
+        achievements: [
+          <>
+            Created an AI-powered lead generation system that increased conversion rates by 20% and reduced API costs by 30%.
+          </>,
+          <>
+            Implemented a RAG-based solution to fully automate previously manual tasks.
           </>,
         ],
         images: [],
@@ -134,54 +126,47 @@ const about = {
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
-    title: "Studies",
+    display: true,
+    title: "Education",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
-      },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "University of the Punjab, PUCIT/FCIT",
+        description: (
+          <>
+            Bachelor’s in Data Science , Dec 2021 – June 2025, Lahore, Pakistan.
+          </>
+        ),
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
+    display: true,
+    title: "Technical Skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Programming Languages",
+        description: <>Python, JavaScript</>,
+        images: [],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        title: "Databases",
+        description: <>MySQL, PostgreSQL, MongoDB, DynamoDB, AWS S3</>,
+        images: [],
+      },
+      {
+        title: "Cloud & Infrastructure",
+        description: <>AWS, EC2, Azure, GCP, PythonAnywhere, Docker</>,
+        images: [],
+      },
+      {
+        title: "Libraries & Frameworks",
+        description: <>Selenium, BeautifulSoup, Flask, Django, React, Next.js, PyTorch, TensorFlow, Scikit-learn, SciPy, OpenCV, LangChain</>,
+        images: [],
+      },
+      {
+        title: "Other Tools",
+        description: <>Power BI, Google Colab, Hugging Face, Vercel, Nginx, LocalStack, Git, GitHub Actions, Mlflow, Trello, Pyspark, Prompt Engineering, Supabase</>,
+        images: [],
       },
     ],
   },
@@ -189,97 +174,92 @@ const about = {
 
 const blog = {
   label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
+  title: "Writing about AI, ML, and tech innovations...",
+  description: `Read what ${person.name} has been working on recently.`,
 };
 
-const work = {
+const workProjects = {
   label: "Work",
-  title: "My projects",
-  description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
+  title: "My Projects",
+  description: `Design and development projects by ${person.name}`,
 };
 
 const gallery = {
   label: "Gallery",
-  title: "My photo gallery",
-  description: `A photo collection by ${person.name}`,
-  // Images from https://pexels.com
+  title: "My Photo Gallery",
+  description: `A collection of moments captured by ${person.name}`,
   images: [
     {
       src: "/images/gallery/img-01.jpg",
-      alt: "image",
+      alt: "Gallery image 1",
       orientation: "vertical",
     },
     {
       src: "/images/gallery/img-02.jpg",
-      alt: "image",
+      alt: "Gallery image 2",
       orientation: "horizontal",
     },
     {
       src: "/images/gallery/img-03.jpg",
-      alt: "image",
+      alt: "Gallery image 3",
       orientation: "vertical",
     },
     {
       src: "/images/gallery/img-04.jpg",
-      alt: "image",
+      alt: "Gallery image 4",
       orientation: "horizontal",
     },
     {
       src: "/images/gallery/img-05.jpg",
-      alt: "image",
+      alt: "Gallery image 5",
       orientation: "horizontal",
     },
     {
       src: "/images/gallery/img-06.jpg",
-      alt: "image",
+      alt: "Gallery image 6",
       orientation: "vertical",
     },
     {
       src: "/images/gallery/img-07.jpg",
-      alt: "image",
+      alt: "Gallery image 7",
       orientation: "horizontal",
     },
     {
       src: "/images/gallery/img-08.jpg",
-      alt: "image",
+      alt: "Gallery image 8",
       orientation: "vertical",
     },
     {
       src: "/images/gallery/img-09.jpg",
-      alt: "image",
+      alt: "Gallery image 9",
       orientation: "horizontal",
     },
     {
       src: "/images/gallery/img-10.jpg",
-      alt: "image",
+      alt: "Gallery image 10",
       orientation: "horizontal",
     },
     {
       src: "/images/gallery/img-11.jpg",
-      alt: "image",
+      alt: "Gallery image 11",
       orientation: "vertical",
     },
     {
       src: "/images/gallery/img-12.jpg",
-      alt: "image",
+      alt: "Gallery image 12",
       orientation: "horizontal",
     },
     {
       src: "/images/gallery/img-13.jpg",
-      alt: "image",
+      alt: "Gallery image 13",
       orientation: "horizontal",
     },
     {
       src: "/images/gallery/img-14.jpg",
-      alt: "image",
+      alt: "Gallery image 14",
       orientation: "horizontal",
     },
   ],
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, newsletter, home, about, blog, workProjects as work, gallery };

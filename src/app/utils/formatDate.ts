@@ -1,10 +1,15 @@
 export function formatDate(date: string, includeRelative = false) {
   const currentDate = new Date();
 
+  if (!date) {
+    console.warn("Warning: Missing date in MDX file. Using default date.");
+    return ""; // Provide a fallback date instead of crashing
+  }
+
   if (!date.includes("T")) {
     date = `${date}T00:00:00`;
   }
-
+  
   const targetDate = new Date(date);
   const yearsAgo = currentDate.getFullYear() - targetDate.getFullYear();
   const monthsAgo = currentDate.getMonth() - targetDate.getMonth();
